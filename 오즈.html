@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오즈</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Poor+Story&display=swap');
+        /* 화면 가운데 정렬 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: inline;
+            flex-direction: column; /* 세로 방향으로 정렬 */
+            justify-content: center;
+            align-items: center;
+            color: rgb(83, 83, 83);
+            background-image: url(https://img.freepik.com/premium-photo/white-paper-velvet-texture-with-horizontal-stripes-can-be-used-for-presentation-paper-texture-and-web-background_434420-1395.jpg?size=626&ext=jpg);
+            background-position: center;
+            background-size: 100% auto; /* 배경 이미지를 가로 크기에 맞춤 */
+            background-attachment: fixed; /* 배경 이미지*/
+        }
+        /* 뒤로가기 버튼 스타일 */
+        .goback-btn {
+            position: absolute; /* 절대 위치 지정 */
+            top: 10px;
+            left: 10px;
+        }
+        /* 고양이 이미지 스타일 */
+       
+
+        h2 {
+            font-size: 6rem;
+            text-align: center; /* 텍스트를 수평 가운데 정렬 */
+        }
+
+        h2, h3, p {
+            font-family: "Poor Story", system-ui;    
+        }
+
+        
+
+        h3 {
+            font-size: 3.5rem;
+            text-align: center; /* 텍스트를 수평 가운데 정렬 */
+            margin-top: -1rem;
+        }
+
+        p {
+            text-align: left; /* 텍스트를 수평 가운데 정렬 */
+            margin-left: 10rem;
+            font-size: 1.5rem;
+        }
+
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: auto; /* 이미지의 높이를 자동으로 조절하여 원래 비율을 유지 */
+            box-shadow: 0 10px 10px rgb(83, 83, 83); /* 그림자 효과 추가 */
+
+
+        }
+        
+        .cat-img {
+             width: 40rem; /* 너비를 200픽셀로 지정 */
+            height: auto; /* 높이를 자동으로 조절하여 원래 비율을 유지 */
+            margin-top: 20px; /* 이미지 위 여백 조정 */
+        }
+
+        .cat-p {
+            width: 22rem;
+        }
+        
+        .profile-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .text-container {
+            flex: 1;
+            padding-right: 20px; /* 이미지와 텍스트 사이 간격 조절 */
+        }
+
+        .image-container img {
+            max-width: 30%; /* 이미지의 최대 너비를 부모 요소의 너비에 맞게 조절 */
+            height: auto; /* 이미지의 높이를 자동으로 조절하여 원래 비율을 유지 */
+        }
+
+        .cats-img{
+            width: 18rem; /* 너비를 200픽셀로 지정 */
+            height: auto; /* 높이를 자동으로 조절하여 원래 비율을 유지 */
+            position: absolute;
+            top: 360px;
+            right: 150px;
+            margin-top: 20px; /* 이미지 위 여백 조정 */
+            border: dotted rgb(232, 207, 81);
+            border-radius: 50%;
+            border-width: 20px;
+        }
+
+        hr {
+             border: none; /* 기본 테두리 제거 */
+             height: 1.5px; /* 수평선의 높이 설정 */
+             background-color: rgb(83, 83, 83, 0.351); /* 수평선의 색상 설정 */
+        }
+
+        .dd {
+            text-align: center;
+            margin-right: 10rem;
+        }
+
+        .goback-btn {
+    position: fixed; /* 화면에 고정 위치 설정 */
+    top: 10px; /* 상단 여백 설정 */
+    left: 10px; /* 좌측 여백 설정 */
+    z-index: 9999; /* 다른 요소 위에 표시되도록 설정 */
+}
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 뒤로가기 버튼 -->
+    <button class="goback-btn" onclick="goBack()">뒤로가기</button>
+
+    <div class="profile-container">
+        <div class="text-container">
+            <h2>우주 최강 킹왕짱 고양이 오즈</h2>
+            <br>
+            <h3>묘적사항</h3>
+            <p><strong>묘종:</strong> 아메리칸 쇼트헤어 [ American Shorthair ]</p>
+            <p><strong>성별:</strong> 여</p>
+            <p><strong>외관:</strong> 은색 바탕에 검은 줄무늬, 채도가 낮은 노란색 눈동자를 가진 깜찍이.</p>
+            <p><strong>성격:</strong> 밥 달라고 할 때만 야옹 한다.</p>
+            <p><strong>이름 유래:</strong> 초코 과자에 흰 마시멜로를 가진 오레오 오즈 라는 시리얼에서 오즈 라는 이름을 가져왔다.</p>
+            <p><strong>특징:</strong> 안아주면 어깨를 넘어서 등 뒤로 탈출한다.</p>
+            <p><strong>장점:</strong> 낚시대로 놀아 주는 것을 좋아한다. 엄청난 식욕을 자랑하며 먹는 것에 환장한다.</p>
+            <p><strong>단점:</strong> 없음</p>
+        </div>
+        <div class="image-container">
+            <img class="cats-img" src="https://lh3.googleusercontent.com/pw/AP1GczMGOjCURABoOOCBiNgmXExjxzEsmBphX8tcQxPqSog3C3QwzkubBUGK4rTcrGHCCKUauwJ7O6zOyZuCQh9CNRnCR0WspvLLvjZpgsznqfxbwu_bKVBptHGcL05Hf6zKz-c4okxd0OT06HTLtJpR5gHUzVggrXXcV0V5kA6k4Fi8v3-jgL9QqHUOoXbbi7c-AQPLQ2y_tYWVU2fIOm56X9LveP8LLiuitc8Ejdame8SsUQwdBvbqk5gIYmmBxR6qNO4DHM6ZVvP6DpaT6hIGiyiIBSo8QWbuTK5FysaMVrXr0qH1MNHMHPeXOJ85ExXvF7qKBpcrxEvbe-JgVSNve6MRm6qbeuWRehfr_PTb7M4iNeTdFvpCm6dRkWkgZKfnilQ6D6wR7xnrInJ3iubNX3D0hK7h6_jhrzeNh6Kkj2qOb2Q6DvFSROufonSO7d2DCONgTcnVtwQqT8Sd9v48tvRcvawkv4SLK6u844V8yGWVUVS3QnHwCYGzKzfCR4uFk3yzrFnuJd8ttQmZ9-K7LDa22OCqjb1xcSjBWkKxGJUCF1_jIPBI-Hxo1UK9oLy55yFInlDehBFTyUdM2JCwK6Gw53op27ZkNV9rnXTy8_cIi3cHp47YeOHD8bC9GOhtj5ltLpuxsFpNQHQzqDO-d9XgS6GGFiH4SVFEf-XvUt7kBA52_j9ZfBJAOCYO5FK0HWKbNibtJkWygCxFw_Momrv54tmrrWbCKJNmKcf5oKmGQS9CDxE0eackFgR53gc29VdJ-1jXPej9fu1oLSmO6ALKLKWUIpO7OMvYuRmAIUorpYHy0Qx7f1zUQFAXvhRw2Myx0KE8-KxSsN-i6YBus2OrVv538AFSt0HwSTuYvlTDj0J8_vO6EBRFvgyIo8ECJUhuXUITyRyh4RnLAsAU8fHO=w737-h737-s-no?authuser=0" alt="오즈 고양이">
+        </div>
+    </div>
+    
+    <hr style="margin-top: 5rem;">
+
+    <!-- 증거자료 -->
+    <h3 style="margin-top: 5rem;">증거자료</h3>
+    <p class="dd">다음은 아가 고양고양이 오즈의 평소 모습이다. 수상할 정도로 귀여운 모습을 보이고 있다.</p>
+    
+    <div class="images-container">
+        <!-- 오즈 고양이 이미지 -->
+        <img class="cat-img" src="https://lh3.googleusercontent.com/pw/AP1GczPdsfSlqsHmTmUq5uz1uSvTWhAahHs3_s-t8S24-bLWQNAKJwN4DA58tFNuOB6jdeX40dyYrX-iGG9tlp7D_gzF7w9Y5Elphvc0uYq08sUotSU_gZJleM5_ZTQN3J3UTqyIqEvagQrTcZNSrAK-eSx4wu-B7rutFV9nTNA0_ez0bD9dpcFkIF9GtBVF1kzx05AufDy7R570n-joSZIvgOlH9037wFszYoSWfB6blo7t1wgTS-2lD_HWy3_vNs-VnFiQDZR9k7aVowo3SqH3Ra4sZzyOa5izIL26NoYxvVXz9f-bbClGzSvdzm3JLarFEXQfTD-evVjvO0sWyxwsT6d-YXCuaw49fVddkTOYVbjHRnCmd5i2uroNR1YqpJncF4z1NLB7uURimmPV18hCVnYeKYzMYfDRlCB7I4-xsqpGi6vqwiuSevzcBGmR7tZ9tImzdYDfbkZJQUSET8_G3erxmifeSrV3v44R7jetiwVg20dq0I1RXCJKtw5hFFVFqg-GeOirnYIbVNMeBq37iTi4x14MNLWRr0Egh9Z9d1UgbrxZ-1guXNS17MSX9xaXssW91OCigVTcOnnC_EMZ2Ro-_lepxbtMwfZzUWc3Z_HOUpCeDwsr3EeKwKugKVCphutVkyTgf16TMGOuSSbGHW3dXAimh2-XbMZJF25XU1IthZaQResovL_oP89OfBc6wGu9mMrVgf0a4cyX7OxHHwVI-vZTjHh9gpT58pA2MWBCVxPqqNpj0rIiO1J0qfhAa6CrrZKWmncPG6zH1w7N5QUPvSEVYbc0rzUvECe3xn8ywj96Qyy37GnCqBi9XlX_B92O0vw49-EJWiHIaVgNFeioR9vJxkAmL5h5-P26yBySBr2E2g_XrP5ahwsCrx233bbdGzn8aEPYAMi102vC5Wwa=w3036-h1012-s-no?authuser=0" alt="오즈 귀" >
+        <img class="cat-img" src="https://lh3.googleusercontent.com/pw/AP1GczNJc850uLspRqJfZ-ezJkp6qLK8FXWNtWpy3NwXZ0bQZEZKgUdDxBL7N-OvZdwvqvi2bnAa01ZZufF8uXKgqvEj82p1NMGx9Kz2Iem5q98JOJRzMwaNzgNVXwzEJLKBWCKMFdD4zZOvNAarjGh2FeU0bhOuW3DJvUW0tlhCKKgYz_Lc1zj1mpqdtU-octyCjWWxIrwcUvIg0rX2hoYpDbENg7R0f0iaeiTiOCShKbMSB_6b0rqmYeYJ1d0zf2YHyhXBfL6u5rbL_NaV49UtpLu6I8MPkQUzzEW3-1ymf_T3iJ5mRqYj6y5vOUv6XepIZ7cavp-X70cxWoDRFGKi3_NmW5dPgHO31Xm6NEufqIiXoN9B7mB7oQcFXwwtnZIiyOjtwv8JhWt0d15EB5CcNxx2SdZU_abhsp1S38484p7r2oC2xSaAhk-OJGVdVSgQOR5ziJa2mM-TVPXXyeBdpJ4-VPTtbycues85F3rwZKv0iCkZ6XpYuE3owxrKPAEhiF4Q3tKyHqbAFzq6PiRiEM2Rd9UoU-CbEIsam9Rtk8UA6bAcEFz7-tKvkd1bDTwvNBlTUt6c-xdDDznAmqKAjjMTmpD3FAQ27voV0o_IbF_W4epxIWqMjLeSHQAYRNBwGhtxkG3qWoTyjLp9Rrovr6gg98lI55BDNqvmtAq7saoRAQtg_36o-x0xy5nhrS6aKrh6srGeJEKSpWoyjhmg4aT23pz2ciPiJLpGXgPLLvraS3aYqfIFtkUIvvB-hyw6_kDIWWMQvZg33B8gLqMHyZcP0ax56M0oX6qghDS0HJ1lsonkg2vioQ0micvV-cZZByi5Vayo21BPNo41n4VsBwQVC2NIVM9Ayqemosl-JvqMRbeRwZTANQxcAUmgsiCNnqUA6wxbwLc4cY2VmJnsgvAg=w1827-h1618-s-no?authuser=0" alt="오즈 빤히">
+        <img class="cat-img" src="https://lh3.googleusercontent.com/pw/AP1GczP_8_a-aeByG7Ti_TkFKbn6EUmkfNliY9DHmByN_OyZXvtVjyXs-JvEGPMl5tLFCcSugmah77rlZiHy2oMGUy9MeAA5V6XWsLezW2UnfJOf4ZaEyuNiklL2T_FpQN9_pMnTgLd6lNxY_ttaorqrPnwxXkrwX0tozge8QWRIxxNmGkOmKyPVuSZfMcAw9dD70RTmgVR6IiLoaUsrafKM3CWCB5ynR1yBT72UNlAdm_JcaKf_zAXVLI-JMHScD5BqjdzCDv-7IjXI9pmqlpsIIngdNhUDNrEFDRSmrf5hram3mi_6e8yMbDVk0xXJoNHdewG1jT8nd7VciNJbBnVJjC9sOZ_tYHapSqBTTii3519F6fe_YTPe_PlAC34zmBh-fu6IjwMV3gIwqCmk9rQnYd-nMgrWvyf6BcF_UDnsyoyIbmY4zJ-CBXV7vfgDFoePg74neswSMvU6-OthXVdd-pTcgmjUGCuLu4_yav9jZBMKQmWFG8QdwW7ybJbdCtRlzgnGkcaKvjI15_-2IASZrhhz8FWbhg4kdBXecZOgSL5yl0fvrGe2af-tpNZI4qFhcoVqRa-uko5EaTKnSJGJqdYGiNVzFC3uBe2nMGv1zAOkq0VLxO7pOZwxvUmAV_hkRaDkJyK7oLEaNSlCI9aD5knHv5PPOQqQUPOhigMNMhD9f_uFF8Ucb1WMtJgyRHIbW4npN1TmFZK30npTgL-ohdhAqwgPWw4qw-ZaSjSPiwJoUj4F2NqtSvUNoL_yFj8xvbawIav3R95Bm5Brf4Y_eLEIWT1iaqub3vpLIN8XoRoIZP6TuNcyeKIMgyFYm4ZxSq6QeLdABeezr5iTU4kl0lt2YY4zHgijlxR_rd1fEGfSveJKatjiFXEM2OJRqf8D0neqlgcHO3ztYxD50mzZATlA=w1710-h2090-s-no?authuser=0" alt="오즈 스튜디오">
+        <img class="cat-img" src="https://lh3.googleusercontent.com/pw/AP1GczNncYcSwpO9DQCbIlQMYTe98FA1LuvJ30fbkhSNkvciqbU-u9NdqMV0oW-6YYDlEHwB2Che9uo6dcxuZ9xbZKNi9_AzRTYRC9p_TQg4rJWtPK_h5yYM3IP-evLkHUWloGTUc0mCB8xnGti7eM5DQVozE_TN_jcVEvXjYDOSEe5-XxA6xK6SLnLxBGSQY9J0_Ou3TPJ3ijjTPmdIasekq5zi0LSR-t0RUnbSyyNLEqJazCmSQsmExnfSocRoDy3qkIQ9wc0LaaxlI9T_L0_u7Pxt7RJ0EPZp6R5DD-D1m9XhxC0a4VkaWQxI8UZFwccsvzOrOfoR7yITQvlGOegvTJTsXPNk0Z7yzNwPCcsu8YcFtwBMnXdmNs8FaysKGnfLkny_xn_k685Y9BbxMsb3DwlRGDRRLfj_FFbAgHtGBrOJORpl6fKrcQcFG5xwQfhWyQRCNFIAR1PqsmMPs5wfaXj8j7v2G44dvReNrKejc7tL8ypxxN8joZ6JcaOjbAezOwb4r0L3PLzWgg-_VkBU6UgkNSxJNWIBZvR1-YmWyC0idatjnnT9GFdbQ20pu38wYa1Pq1Kp3_UKcwIOT69RzYaC1cCmsp0vFWlf8kndbTEMalaVpCmeavuYrwj8cZelfcI2kPLw5_ZyABrGnJ5cgPA5-yCTMiKjskSaAxaR93hT-x5PTLbWsv5ge1-gTUvN1ncPpxwFUypD54ANF02KanzI83qcM8IB_YywrbwZ0R96JW8WkR7BHBnMM_HcctJR0OTeBmEkd4YsxtPgL2LCbeJ6WYi7UP4thyar0-ARmBaZQBI69L2UE-k-rIEabWkcTMFo-Zzd-Cj4xsYZZgdCd-AuNjyw0rypufDVs-I9PmyTDWVeig-us62XmHLEMf0Zp2MjXHY383iFd6131nYx3ZrT=w1169-h1251-s-no?authuser=0" alt="오즈 딸기">
+        <img class="cat-img" src="https://lh3.googleusercontent.com/pw/AP1GczPTz19HRhY2IYQXcCBXOBCL_BC3eO-sPdY90fTBeeK4cgw03NLmLeDKk-DFprzjOPZdMD4xYE0CBTSaN-13WVYk3gGg-XilCDRbpjmT1uEIS9r552TllG5f0zKDiPBR2wJJlhTXGBfmpOui_JyrHEU7Z_h65tVmYypUxEVIekdf2XV6090V79aVsYCuv_LmaYqbSQS0CQND8kUWu1VApkiAkw4OFL9Y5ygMhhMmcRs9GIUOsBz84K-Ly9n9EgN_lm9Q8tR_rOowS1cfy8MYYdevbz1bmaZdRAPJUx_O30SLFiKR-zmh0n7gdU1yF6nhl88yfAo-bM3h6vgGQTYB_pXPDSfdXFn51S8w92E-YAJZ23FarQumOLpoaFFS4iiG4fNiUu0iN28q9CbBLcg1jqXiFlvs2q3mkzo3b9aXd1qCjq4ccYaov184CGETPjxpz44PC9ko8mp7jYn2KI-pT1v-JqrWYOecRtzV7fU5Y4eptABb2T2xHgYorXEfb2t9qnEJc1TvdEAE88XUePfxlKRYAnkIqNJjMiLkVtWDl8MfCHFKyLEYNUx4fDdOrS879SIuDtKp39vPo8CMVVmmbY211YepSs2psFELnjoSvnI5dIkNDTN2p0P5oJhPIDRD_ghTmgLeqg6-PGx0db9KpoKnCIk1nJkxrDue93YLqGPwMXK43Gx4CwBb7zUtiDQ3f_q8-8i97v3Xjm2lj7v-9E79y0LPRMsqAAzYQYI4Qu-_TNYzOC-eBc-HNJ_gr54Dp0df_lUeGWHh3ynzkBwvddjgYQ2Cf_cArGgML2-pXn-jrktztfHNmstuK6enNjYmV82mVOBYdZYmh71v_3qBiVBeUEpuTk0eMtJ3jYX3p6w32YcPzoJEGxdFTyKtK_tAOmclFusYfAfTU7wm261AVqtW=w2826-h2090-s-no?authuser=0" alt="오즈 하품">
+        <img class="cat-img" src="https://lh3.googleusercontent.com/pw/AP1GczNLk-WaBJ2MRAiYwjy6o6jueDtdvOLOpHSt62z8qlBW5Jizdak2K3mhn-sHl_UuFM-k8ByrLjSPksbRWFgbg2O1ET_OWXEQFrps7C6WJWwQhLi8OD0rv9Lv15u9V8-umnaSn-cC77R-IQvB5xElMGO5zdwo-eNj9cobowOh5o3FwrDQ0fzx1jQeny3456bKaj5SMLfawrDtYwiDrF8x2HU56HQAnD9fxJFlB--mNWpU9HfV1fRBqOzPsn3gyPGSBvptA3jOTUgZQUWfw1L4VJc6gJ_kQTomJ1RmPHRA-H_Kk94sMU7FdxmaHtNdJWI9cfn0zXy4edHGv0EDmqX7OyFpavT-38ljhfdqsLplQtzQf6T3dE0rr3wKs8YXOmpZbMvNfZ0HHiTP7hpfB2NRK9jPDmUpQIiKbggHcM-bxv2xBBK40SAyP1GqzcIvsWrnTnSR1seDZVJKovh-xSQfMFu1BgfazR78ojANgItQVLSWNCqlZBvGuXsU6i8Yafqoc0vB1ilR93CWmRm2w4nlFQHoccKjPCRyi6L6JlU2bUe6rVkwBC1FsTBwy78kQpt5AVJzY53_BcoTa26stt3YwX7v_zZrE50wk4PcZmyJ1gwLD-esMe3VG6WflugCODqRlRjk6ZnLTlxlrF_XUmRlnEYDyCbjivS1ha9VnobPzcMW1HNXUjXy0bfUayqH4PSFYPbOHhd7N_2Uj8oysJXW8JHG_XPGknvqi2yYSxr3QiiIeparDT-clG1zbTJL04fNDZ2dzvZQV5_3w91eKS5q_tgIZUcRpkXlWRxhKKNEhja4y7H0BhrCSdhATrr7NgmSO7q84qyJf800RrkbByxyLM3WsRxPd1BsGoXu4dQN8Ymx-JAH1q33oLT6cUhEOrlpWjyItwgyfAVcgdhI-P-qKRiu=w2090-h2090-s-no?authuser=0" alt="오즈 배"> 
+        </div>
+    
+    
+    
+        
+    
+    <script>
+        // 뒤로가기 함수 정의
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
